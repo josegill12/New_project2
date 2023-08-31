@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <title>User's Profile</title>
+</head>
+
+<body>
+    <h1>Your Profile</h1>
+
+    <% users.forEach( (users)=> { %>
+
+        <p>
+            <%= users.username %>
+                <a href="<%= users._id %>/edit">Edit</a>
+        </p>
+        <% }) %>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<form action="/signup" method="POST">
+    <input type="text" name="name" placeholder="Enter full Name" />
+    <input type="text" name="username" placeholder="Enter a username" />
+    <input type="password" name="password" placeholder="Enter a Password" />
+    <button type="submit">Sign up</button>
+</form>
+
+<!-- if (req.body.username !== req.body.password) {
+    let plainTextPassword = req.body.password;
+    bcrypt.hash(plainTextPassword, 10, (err, hash) => {
+      if (err) {
+        console.log(err);
+      } else {
+        const newUser = new User({
+          username: req.body.username,
+          password: hash,
+        });
+        let res = await newUser.save()  
+        if(!res.error){
+        
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("user is created", user);
+            res.redirect("/");
+          } -->
