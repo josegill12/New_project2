@@ -1,12 +1,28 @@
 h1 {
-  color: rgb(19, 13, 13);
+  color: rgb(247, 10, 10);
 }
 
 .Mk-Hero {
   display: flex;
   padding: 5%;
-  background-color: #ce2121;
+
   justify-content: center;
   align-items: center;
-    flex-direction: column;
+  flex-direction: column;
+}
+body {
+  background-color: #02020200;
+  background-image: url("https://media.istockphoto.com/id/1202450616/vector/new-york-city-typography-design-nyc-round-banner-poster-sport-t-shirt-print-design-and.jpg?s=612x612&w=0&k=20&c=3NpnWNn__gAbc-VfRsPtDwtrooEkm1yRirKGJoSe_j0=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-attachment: fixed;
+}
+
+.broken {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
 }

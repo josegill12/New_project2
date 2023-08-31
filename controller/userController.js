@@ -136,17 +136,11 @@ router.put("/:id", async (req, res) => {
 });
 
 // Delete Route
-router.delete("/users/:id", (req, res) => {
-  const userId = parseInt(req.params.id, 10);
-
-  const user = users.find((user) => user.id === userId);
-
-  if (user !== -1) {
-    users.splice(user, 1);
-    res.redirect("/users");
-  } else {
-    res.status(404).send("User not found");
-  }
+router.delete("/:id", async (req, res) => {
+  const userId = req.params.id;
+  console.log(userId);
+  const user = await User.findByIdAndDelete(userId);
+  res.redirect("/users");
 });
 
 // Logout Route
